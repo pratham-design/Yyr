@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview for Car Manufacturing Company</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url("https://source.unsplash.com/featured/?interview"); /* Relevant interview image */
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .job-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-card h2 {
+            color: #293247; /* Dark teal */
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .job-card p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #428bca; /* Teal */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .button:hover {
+            background-color: #357ebd; /* Even darker teal on hover */
+        }
+
+        .highlight {
+            background-color: #eaf2ff; /* Light blue */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Job Openings</h1>
+    </header>
+
+    <main class="content">
+        <div class="job-card">
+            <h2>Software Engineer</h2>
+            <p>We are looking for talented software engineers to join our development team. Apply now and be part of creating cutting-edge automotive software solutions.</p>
+            <button class="button">Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h2>Production Supervisor</h2>
+            <p>Join us as a production supervisor and oversee manufacturing processes to ensure efficiency and quality in car production.</p>
+            <button class="button">Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h2>Sales Representative</h2>
+            <p>We are hiring sales representatives to promote and sell our latest car models. If you have excellent communication skills and a passion for sales, apply now!</p>
+            <button class="button">Apply Now</button>
+        </div>
+
+        <div class="job-card highlight">
+            <h2>Quality Assurance Specialist</h2>
+            <p>Join our quality assurance team and ensure that our cars meet the highest standards of safety and performance. Apply now and contribute to delivering top-quality vehicles.</p>
+            <button class="button">Apply Now</button>
+        </div>
+    </main>

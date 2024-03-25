@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Manufacturing - Materials</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url("https://source.unsplash.com/featured/?car,material"); /* Relevant Unsplash image */
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .material-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .material-card h2 {
+            color: #293247; /* Dark teal */
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .material-card p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .material-card ul {
+            text-align: left;
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+
+        .button {
+            background-color: #428bca; /* Teal */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .button:hover {
+            background-color: #357ebd; /* Even darker teal on hover */
+        }
+
+        .highlight {
+            background-color: #eaf2ff; /* Light blue */
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Materials</h1>
+    </header>
+
+    <main class="content">
+        <div class="material-card">
+            <h2>Steel</h2>
+            <p>Steel is a commonly used material in car manufacturing due to its strength, durability, and affordability.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>High tensile strength</li>
+                <li>Excellent impact resistance</li>
+                <li>Easy to shape and mold</li>
+            </ul>
+        </div>
+
+        <div class="material-card">
+            <h2>Aluminum</h2>
+            <p>Aluminum is valued for its lightweight properties, making it ideal for components that require reduced weight without sacrificing strength.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Low density</li>
+                <li>High corrosion resistance</li>
+                <li>Conductive properties</li>
+            </ul>
+        </div>
+
+        <div class="material-card">
+            <h2>Carbon Fiber</h2>
+            <p>Carbon fiber is a high-performance material known for its exceptional strength-to-weight ratio, making it popular in sports cars and high-end vehicles.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Lightweight and rigid</li>
+                <li>Resistant to fatigue and deformation</li>
+                <li>Highly customizable</li>
+            </ul>
+        </div>
+
+        <div class="material-card">
+            <h2>Plastics</h2>
+            <p>Various types of plastics are used in car manufacturing for their versatility, cost-effectiveness, and ability to be molded into complex shapes.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Lightweight</li>
+                <li>Corrosion-resistant</li>
+                <li>Impact-absorbing properties</li>
+            </ul>
+        </div>
+
+        <div class="material-card highlight">
+            <h2>Explore Further</h2>
+            <p>For detailed specifications and technical information on the materials used in car manufacturing, download our comprehensive document.</p>
+            <button class="button">Download Material Specs</button>
+        </div>
+    </main>
+</body>
+</html>

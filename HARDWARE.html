@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Manufacturing - Hardware Design</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url("https://source.unsplash.com/featured/?car,hardware"); /* Relevant Unsplash image */
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hardware-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hardware-card h2 {
+            color: #293247; /* Dark teal */
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .hardware-card p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .hardware-card ul {
+            text-align: left;
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+
+        .button {
+            background-color: #428bca; /* Teal */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #357ebd; /* Even darker teal on hover */
+        }
+
+        .highlight {
+            background-color: #eaf2ff; /* Light blue */
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Hardware Design</h1>
+    </header>
+
+    <main class="content">
+        <div class="hardware-card">
+            <h2>Engine System</h2>
+            <p>The engine system is a crucial component of the car's hardware, responsible for power generation and vehicle propulsion.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Powerful V6 engine</li>
+                <li>Direct fuel injection system</li>
+                <li>Variable valve timing</li>
+            </ul>
+        </div>
+
+        <div class="hardware-card">
+            <h2>Suspension System</h2>
+            <p>The suspension system ensures a smooth and comfortable ride by absorbing shocks and vibrations from the road surface.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Independent multi-link suspension</li>
+                <li>Adaptive damping system</li>
+                <li>Stabilizer bars for improved handling</li>
+            </ul>
+        </div>
+
+        <div class="hardware-card">
+            <h2>Braking System</h2>
+            <p>The braking system provides reliable stopping power, ensuring safety and control during driving.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Anti-lock braking system (ABS)</li>
+                <li>Electronic brake-force distribution (EBD)</li>
+                <li>Regenerative braking for energy recovery</li>
+            </ul>
+        </div>
+
+        <div class="hardware-card">
+            <h2>Electrical System</h2>
+            <p>The electrical system powers various components of the car, including lighting, entertainment, and communication systems.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>High-capacity battery</li>
+                <li>Advanced wiring harness</li>
+                <li>Integrated control modules</li>
+            </ul>
+        </div>
+
+        <div class="hardware-card highlight">
+            <h2>Explore Further</h2>
+            <p>For detailed specifications and technical information on the hardware design, download our comprehensive document.</p>
+            <button class="button">Download Hardware Specs</button>
+        </div>
+    </main>
+</body>
+</html>
+
+
+

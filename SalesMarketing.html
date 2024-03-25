@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Manufacturing</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+   
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .hero-section {
+    background-image: url('https://source.unsplash.com/1600x900/?car,manufacturing');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  .hero-section h1 {
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+  }
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  .feature-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .feature-box {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .feature-box h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .feature-box p {
+    color: #666;
+    font-size: 16px;
+  }
+  .feature-box img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    clear: both;
+  }
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 6vw;
+    }
+    .feature-box {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Belvedere Automotive</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Belvedere.html">Home</a></li>
+        <li><a href="Online.html">Online</a></li>
+        <li><a href="Dealership.html">Dealership</a></li>
+      </ul>
+    </nav>
+    <section class="hero-section">
+      <div>
+        <h1>Building the Future of Mobility</h1>
+        <p>We specialize in manufacturing high-quality cars with cutting-edge technology.</p>
+        <a href="#" class="cta-button">Explore Our Products</a>
+      </div>
+    </section>
+    <section class="feature-section">
+      <div class="feature-box">
+        <img src="https://source.unsplash.com/1600x900/?car,engineering" alt="Quality Engineering">
+        <h2>Quality Engineering</h2>
+        <p>Our cars are built with precision engineering to ensure safety and performance.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://source.unsplash.com/1600x900/?car,sustainable" alt="Sustainable Manufacturing">
+        <h2>Sustainable Manufacturing</h2>
+        <p>We prioritize sustainability by using eco-friendly materials and energy-efficient processes.</p>
+      </div>
+      <div class="feature-box">
+        <img src="https://source.unsplash.com/1600x900/?car,technology" alt="Innovative Technology">
+        <h2>Innovative Technology</h2>
+        <p>Experience the latest technology features that make driving enjoyable and convenient.</p>
+      </div>
+    </section>
+  </div>
+  <footer class="footer">
+    <p>&copy; <span id="currentYear"></span> Car Manufacturing. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

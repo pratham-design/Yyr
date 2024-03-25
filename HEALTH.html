@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview for Car Manufacturing Company</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url("https://source.unsplash.com/featured/?car"); 
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .research-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .research-card h2 {
+            color: #293247; /* Dark teal */
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .research-card p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #428bca; /* Teal */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .button:hover {
+            background-color: #357ebd; /* Even darker teal on hover */
+        }
+
+        .highlight {
+            background-color: #eaf2ff; /* Light blue */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Car Health Parameters</h1>
+    </header>
+
+    <main class="content">
+        <div class="research-card">
+            <h2>Engine Health Monitoring</h2>
+            <p>Explore how we monitor engine health parameters such as temperature, oil pressure, and performance to ensure optimal functionality.</p>
+            <button class="button">Learn More</button>
+        </div>
+
+        <div class="research-card">
+            <h2>Brake System Inspection</h2>
+            <p>Learn about our rigorous brake system inspections to maintain safety standards and ensure efficient braking performance.</p>
+            <button class="button">Learn More</button>
+        </div>
+
+        <div class="research-card">
+            <h2>Tire Pressure Management</h2>
+            <p>Discover our tire pressure monitoring systems and the importance of maintaining proper tire pressure for safety and fuel efficiency.</p>
+            <button class="button">Learn More</button>
+        </div>
+
+        <div class="research-card highlight">
+            <h2>Electrical System Diagnostics</h2>
+            <p>Learn how we diagnose and troubleshoot electrical system issues to ensure reliable operation of critical vehicle components.</p>
+            <button class="button">Learn More</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Manufacturing - Dealership</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url("https://source.unsplash.com/featured/?dealership,car"); /* Relevant dealership image */
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .dealer-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .dealer-card h2 {
+            color: #293247; /* Dark teal */
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .dealer-card p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #428bca; /* Teal */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .button:hover {
+            background-color: #357ebd; /* Even darker teal on hover */
+        }
+
+        .highlight {
+            background-color: #eaf2ff; /* Light blue */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<button onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Visit Our Dealership</h1>
+    </header>
+
+    <main class="content">
+        <div class="dealer-card">
+            <h2>Find Your Dream Car</h2>
+            <p>Explore a wide range of vehicles at our dealership, from compact cars to luxury SUVs.</p>
+            <button class="button">View Inventory</button>
+        </div>
+
+        <div class="dealer-card">
+            <h2>Expert Sales Team</h2>
+            <p>Our knowledgeable sales team is dedicated to helping you find the perfect vehicle to suit your needs.</p>
+            <button class="button">Meet Our Team</button>
+        </div>
+
+        <div class="dealer-card">
+            <h2>Easy Financing Options</h2>
+            <p>Get hassle-free financing with flexible payment plans tailored to your budget.</p>
+            <button class="button">Explore Financing</button>
+        </div>
+
+        <div class="dealer-card highlight">
+            <h2>Book a Test Drive</h2>
+            <p>Experience your favorite car firsthand by scheduling a test drive with us today.</p>
+            <button class="button">Schedule Now</button>
+        </div>
+
+    </main>
+</body>
+</html>

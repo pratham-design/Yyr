@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Manufacturing - B2C Online</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url("https://source.unsplash.com/featured/?online,data"); /* Relevant online shopping image */
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Align text properly */
+            position: relative;
+        }
+
+        .box h2 {
+            color: #293247; /* Dark teal */
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .bar-graph {
+            width: 100%;
+            margin-top: 20px; /* Add some top margin */
+        }
+
+        .bar {
+            height: 20px;
+            background-color: #428bca; /* Teal */
+            margin-bottom: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .positive {
+            width: 40%;
+            color:blue ;
+        }
+
+        .negative {
+            width: 35%;
+            background-color: red; /* Red */
+        }
+
+        .comments {
+            width: 30%;
+            background-color: #f39c12; /* Orange */
+        }
+
+        .total {
+            width: 60%;
+            background-color: #2ecc71; /* Green */
+        }
+
+        .label {
+            position: absolute;
+            top: 0;
+            left: 100%; /* Position labels at the end of each bar */
+            margin-left: 10px; /* Add some left margin */
+            color: black;
+            font-size: 0.9em;
+            line-height: 20px; /* Center vertically */
+        }
+    </style>
+</head>
+<body>
+<button onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Online </h1>
+    </header>
+
+    <main class="content">
+        <div class="box">
+            <h2>Customer research data</h2>
+            <p>Our online customer research indicates:</p>
+            <ul>
+                <li>Positive Reviews: 13,451</li>
+                <li>Negative Reviews: 11,839</li>
+                <li>Comments: 10,463</li>
+                <li>Total Reviews: 35,753</li>
+            </ul>
+            <div class="bar-graph">
+                <div class="bar positive">
+                    <span class="label">Positive</span>
+                </div>
+                <div class="bar negative">
+                    <span class="label">Negative</span>
+                </div>
+                <div class="bar comments">
+                    <span class="label">Comments</span>
+                </div>
+                <div class="bar total">
+                    <span class="label">Total</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

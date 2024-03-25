@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Manufacturing - Software Design</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            background-image: url("https://source.unsplash.com/featured/?car,software"); /* Relevant Unsplash image */
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .software-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .software-card h2 {
+            color: #293247; /* Dark teal */
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .software-card p {
+            line-height: 1.6;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .software-card ul {
+            text-align: left;
+            margin-left: 20px;
+            font-size: 1.1em;
+        }
+
+        .button {
+            background-color: #428bca; /* Teal */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .button:hover {
+            background-color: #357ebd; /* Even darker teal on hover */
+        }
+
+        .highlight {
+            background-color: #eaf2ff; /* Light blue */
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Software Design</h1>
+    </header>
+
+    <main class="content">
+        <div class="software-card">
+            <h2>Infotainment System</h2>
+            <p>The infotainment system provides entertainment, navigation, and connectivity features to enhance the driving experience.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Touchscreen display</li>
+                <li>GPS navigation</li>
+                <li>Bluetooth connectivity</li>
+            </ul>
+        </div>
+
+        <div class="software-card">
+            <h2>Driver Assistance Systems</h2>
+            <p>Advanced driver assistance systems help improve safety and convenience by providing features such as lane-keeping assist and adaptive cruise control.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Lane departure warning</li>
+                <li>Automatic emergency braking</li>
+                <li>Adaptive cruise control</li>
+            </ul>
+        </div>
+
+        <div class="software-card">
+            <h2>Vehicle Management Software</h2>
+            <p>Vehicle management software monitors and controls various aspects of the car, including engine performance and diagnostics.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Engine control unit (ECU)</li>
+                <li>Real-time diagnostics</li>
+                <li>Remote vehicle monitoring</li>
+            </ul>
+        </div>
+
+        <div class="software-card">
+            <h2>Connectivity Solutions</h2>
+            <p>Connectivity solutions enable seamless integration with smartphones and other devices, allowing for hands-free communication and media streaming.</p>
+            <p>Key features:</p>
+            <ul>
+                <li>Apple CarPlay and Android Auto support</li>
+                <li>Wi-Fi hotspot capability</li>
+                <li>Cloud-based services</li>
+            </ul>
+        </div>
+
+        <div class="software-card highlight">
+            <h2>Explore Further</h2>
+            <p>For detailed specifications and technical information on the software design, download our comprehensive document.</p>
+            <button class="button">Download Software Specs</button>
+        </div>
+    </main>
+</body>
+</html>
